@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Basket.Api.Controllers
 {
     [ApiController]
-    [Route("api/v1/]controller]")]
+    [Route("api/v1/[controller]")]
     public class BasketController : ControllerBase
     {
         private readonly IBasketRepository _repository;
@@ -35,7 +35,7 @@ namespace Basket.Api.Controllers
             return Ok(await _repository.UpdateBasket(basket));
         }
 
-        [HttpDelete("{userName", Name = "DeleteBasket")]
+        [HttpDelete("{userName}", Name = "DeleteBasket")]
         [ProducesResponseType(typeof(void), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> DeleteBasket(string userName)
         {
