@@ -1,0 +1,73 @@
+@Package manager
+Install-Package Microsoft.Extensions.Caching.StackExchangeRedis (in Basket.Api)
+Update-Package -ProjectName {project name} (in Basket.Api)
+Install-Package Npgsql (in Discount API)
+Install-Package Dapper (in Discount API)
+
+@Portainer
+admin-admin1234
+
+@PostgreSql
+CREATE TABLE Coupon(
+	Id SERIAL PRIMARY KEY NOT NULL,
+	ProductName VARCHAR(24) NOT NULL,
+	Description TEXT,
+	Amount INT
+);
+INSERT INTO Coupon (ProductName, Description, Amount) VALUES ('IPhone X', 'Iphone Discount', 150);
+INSERT INTO Coupon (ProductName, Description, Amount) VALUES ('Samsung 10', 'Samsund Discount', 100);
+
+
+@Docker
+#General
+docker images
+docker ps
+docker ps -a
+docker start {container id}
+docker stop {container id}
+docker rm {container id}
+docker rmi {container id}
+docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d 
+docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down
+docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up --build
+docker ps -aq
+docker stop {container id}
+docker stop $(docker ps -aq)
+docker rm {container id}
+docker rm $(docker ps -aq)
+docker rmi $(docker images -q)
+docker system prune
+docker logs -f {container name}
+
+
+#Mongo
+docker pull mongo
+docker run -d -p 27017:27017 --name shopping-mongo mongo
+docker logs -f shopping-mongo
+docker exec -it shopping-mongo /bin/bash
+docker exec -it shopping-mongo /bin/bash
+##Inside mongo
+root@d0fb620c3245:/# ls
+root@d0fb620c3245:/# mongo
+> show dbs
+> show databases
+> use CatalogDb
+> db.createCollection('Products')
+> db.Products.insertMany([{"Name":"Asus Laptop","Category":"Computers","Summary":"Summary","Description":"Description","ImageFile":"ImageFile","Price":54.93},{"Name":"HP Laptop","Category":"Computers","Summary":"Summary","Description":"Description","ImageFile":"ImageFile","Price":88.93}])
+> db.Products.find({}).pretty()
+> db.Products.remove({})
+> show databases
+> show collections
+> db.Products.find({}).pretty()
+
+#Redis
+docker pull redis
+docker run -d -p 6379:6379 --name aspnetrun-redis redis
+##Inside redis
+docker exec -it aspnetrun-redis /bin/bash
+redis-cli
+ping
+set key value
+get key
+set name ilham
+get name
