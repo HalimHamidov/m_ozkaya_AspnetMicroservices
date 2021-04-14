@@ -2,4 +2,12 @@
 - Grpc
 - Redis
 - Mongo
-- portainer
+- SOLID
+- Dependency Inversion Principle
+- Seperation of concerns
+- DDD
+  - Ubiquotus language(Same language)
+  - Entity Value Object  
+- Clean architecture with DDD
+- Materialized view
+- Check Best practices
