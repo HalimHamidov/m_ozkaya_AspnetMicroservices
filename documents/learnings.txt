@@ -7,7 +7,9 @@
 - Seperation of concerns
 - DDD
   - Ubiquotus language(Same language)
-  - Entity Value Object  
+  - Entity Value Object 
+	-// Learn more: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/implement-value-objects
+  - Mediator
 - Clean architecture with DDD
 - Materialized view
 - Check Best practices
