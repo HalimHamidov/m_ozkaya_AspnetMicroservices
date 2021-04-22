@@ -1,4 +1,5 @@
 - Http2 & Http3
+- Dependency Injection
 - Grpc
 - Redis
 - Mongo
@@ -13,3 +14,4 @@
 - Clean architecture with DDD
 - Materialized view
 - Check Best practices
+- Static class, constructor
