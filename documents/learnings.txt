@@ -15,3 +15,8 @@
 - Materialized view
 - Check Best practices
 - Static class, constructor
+- IReadonly, IQueryble, IEnumerable
+- Entryframework core methods, states
+- access providers (public, ....)
+- AddScoped => per request
+  AddTransient => once when the application starts
