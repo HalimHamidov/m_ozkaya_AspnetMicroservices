@@ -1,10 +1,10 @@
-﻿using Basket.Api.Entities;
+﻿using Basket.API.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Basket.Api.Repositories
+namespace Basket.API.Repositories
 {
    public interface IBasketRepository
     {

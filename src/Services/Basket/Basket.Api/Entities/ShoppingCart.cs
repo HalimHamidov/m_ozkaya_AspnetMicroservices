@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Basket.Api.Entities
+namespace Basket.API.Entities
 {
     public class ShoppingCart
     {
