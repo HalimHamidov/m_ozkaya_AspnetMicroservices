@@ -20,4 +20,6 @@
 - access providers (public, ....)
 - AddScoped => per request
   AddTransient => once when the application starts
-- MQ protocol RabbitMQ
+- RabbitMQ
+	- MQ protocol
+	- Exchange types
