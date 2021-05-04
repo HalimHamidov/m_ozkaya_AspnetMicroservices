@@ -509,6 +509,168 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Ocelot ApiGw",
+			"item": [
+				{
+					"name": "Catalog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5010/catalog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5010",
+							"path": [
+								"catalog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Catalog By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/catalog/606839ace37dd3c585ef0dc9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"catalog",
+								"606839ace37dd3c585ef0dc9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Basket Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"UserName\":\"swn\",\r\n   \"Items\":[\r\n      {\r\n         \"Quantity\":2,\r\n         \"Color\":\"Red\",\r\n         \"Price\":500,\r\n         \"ProductId\":\"602d2149e773f2a3990b47f5\",\r\n         \"ProductName\":\"IPhone X\"\r\n      },\r\n      {\r\n         \"Quantity\":1,\r\n         \"Color\":\"Blue\",\r\n         \"Price\":500,\r\n         \"ProductId\":\"602d2149e773f2a3990b47f6\",\r\n         \"ProductName\":\"Samsung 10\"\r\n      }\r\n   ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5010/basket/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5010",
+							"path": [
+								"basket",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Basket By Username",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5010/basket/swn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5010",
+							"path": [
+								"basket",
+								"swn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Basket Checkout",
+					"protocolProfileBehavior": {
+						"strictSSL": false,
+						"followRedirects": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"swn\",\r\n    \"totalProce\": 0,\r\n    \"firstName\": \"swn\",\r\n    \"lastName\": \"swn\",\r\n    \"emailAddress\": \"string\",\r\n    \"addressLine\": \"string\",\r\n    \"country\": \"string\",\r\n    \"state\": \"string\",\r\n    \"zipCode\": \"string\",\r\n    \"cardName\": \"string\",\r\n    \"cardNumber\": \"string\",\r\n    \"expiration\": \"string\",\r\n    \"cvv\": \"string\",\r\n    \"paymentMethod\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5010/basket/Checkout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5010",
+							"path": [
+								"basket",
+								"Checkout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order by Username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5010/order/swn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5010",
+							"path": [
+								"order",
+								"swn"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
