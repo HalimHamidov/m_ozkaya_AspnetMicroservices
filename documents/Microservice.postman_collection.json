@@ -519,12 +519,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5010/catalog",
+							"raw": "http://localhost:8010/catalog",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5010",
+							"port": "8010",
 							"path": [
 								"catalog"
 							]
@@ -545,17 +545,15 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/v1/catalog/606839ace37dd3c585ef0dc9",
+							"raw": "http://localhost:8010/catalog/602d2149e773f2a3990b47fa",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8000",
+							"port": "8010",
 							"path": [
-								"api",
-								"v1",
 								"catalog",
-								"606839ace37dd3c585ef0dc9"
+								"602d2149e773f2a3990b47fa"
 							]
 						}
 					},
@@ -576,12 +574,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5010/basket/",
+							"raw": "http://localhost:8010/basket/",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5010",
+							"port": "8010",
 							"path": [
 								"basket",
 								""
@@ -603,12 +601,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:5010/basket/swn",
+							"raw": "http://localhost:8010/basket/swn",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5010",
+							"port": "8010",
 							"path": [
 								"basket",
 								"swn"
@@ -636,12 +634,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5010/basket/Checkout",
+							"raw": "http://localhost:8010/basket/Checkout",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5010",
+							"port": "8010",
 							"path": [
 								"basket",
 								"Checkout"
@@ -656,12 +654,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5010/order/swn",
+							"raw": "http://localhost:8010/order/swn",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5010",
+							"port": "8010",
 							"path": [
 								"order",
 								"swn"
