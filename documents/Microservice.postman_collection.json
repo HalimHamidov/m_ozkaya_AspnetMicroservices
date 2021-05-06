@@ -669,6 +669,20 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Shopping.Aggregator",
+			"item": [
+				{
+					"name": "Shopping.Aggregator By Username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
