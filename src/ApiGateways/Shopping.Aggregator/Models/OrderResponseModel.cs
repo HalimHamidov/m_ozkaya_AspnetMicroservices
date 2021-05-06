@@ -1,6 +1,6 @@
 ﻿namespace Shopping.Aggregator.Models
 {
-    public class OrderReponseModel
+    public class OrderResponseModel
     {
         public string UserName { get; set; }
         public decimal TotalPrice { get; set; }

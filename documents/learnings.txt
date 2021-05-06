@@ -25,3 +25,4 @@
 	- Exchange types
 - BFF (Backend for frontend)
 - Ocelot
+- Aggregator design pattern
