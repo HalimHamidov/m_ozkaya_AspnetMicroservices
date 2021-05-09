@@ -19,6 +19,7 @@ INSERT INTO Coupon (ProductName, Description, Amount) VALUES ('Samsung 10', 'Sam
 
 
 @Docker
+http://host.docker.internal/
 #General
 docker images
 docker ps
