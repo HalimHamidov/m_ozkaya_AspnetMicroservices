@@ -492,7 +492,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8004/api/v1/order/3",
+							"raw": "http://localhost:8004/api/v1/order/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -502,7 +502,7 @@
 								"api",
 								"v1",
 								"order",
-								"3"
+								"2"
 							]
 						}
 					},
@@ -678,7 +678,20 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": null
+						"url": {
+							"raw": "http://localhost:8005/api/v1/shopping/swn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								"api",
+								"v1",
+								"shopping",
+								"swn"
+							]
+						}
 					},
 					"response": []
 				}
